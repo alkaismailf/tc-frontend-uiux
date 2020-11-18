@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/dashboard_profile/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="nav_icon" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <!-- <a href="#">blablabla</a>
+                <a href="#">blablabla</a>
+                <a class="active_link" href="#">blablabla</a> -->
+            </div>
+            <div class="navbar__right">
+                <a class="popup" href="#">
+                    <i class="fa fa-bell-o"></i><span class="popupText">Notification</span>
+                </a>
+                <div class="points">
+                    <i class="fa fa-trophy"></i>
+                    <div class="points__inner">
+                        <p class="text-primary-p">My Points</p>
+                        <span class="font-bold text-title">115</span>
+                    </div>
+                </div>
+                <a href="#">
+                    <img width="30" src="./img/avatar.svg" alt="" />
+                </a>
+                <a class="signout" href="#">
+                    <i class="fa fa-power-off"></i><span>Sign Out</span>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main__container">
+
+                <div class="main__title">
+                    <div class="main__greeting">
+                        <h1>Profile</h1>
+                        <p>Manage your profile</p>
+                    </div>
+                </div>
+
+                <div class="charts">
+
+                    <div class="charts__left">
+                        <div class="charts__left__title">
+                            <div>
+                                <h1>Profile</h1>
+                            </div>
+                            <i class="fa fa-user"></i>
+                        </div>
+                        <div class="profile__card">
+                            <i class="fa fa-user-o fa-2x"></i>
+                            <div class="profile__inner">
+                                <p>Your Name</p>
+                            </div>
+                        </div>
+                        <div class="profile__column">
+                            <div class="profile__data">
+                                <h2>Main Profile</h2>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-id-card"></i><span>Member ID</span></p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>12345678</p>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-user-circle"></i><span>Username</span></p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>yourusername</p>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-calendar-o"></i><span>Date of Birth</span></p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>1 January 2020</p>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-envelope"></i>Email</p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>yourname@yourmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-phone"></i>Phone</p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>0853147xxxx</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile__travel">
+                                <h2>Travel Details</h2>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-id-badge"></i><span>No. Identity</span></p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <div class="data__icon">
+                                        <p><i class="fa fa-file-code-o"></i>Referral Code</p>
+                                    </div>
+                                    <div class="data__inner">
+                                        <p>1652xxx</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button class="edit"><i class="fa fa-edit"></i> Edit</button>
+                                <button class="pass"><i class="fa fa-lock"></i> Change Password</button>
+                            </div>
+                        </div>                      
+                    </div>
+                    
+                </div>
+
+            </div>
+        </main>
+
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="./img/picasso-large-logo.svg" alt="">
+                </div>
+                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link">
+                    <a href="#"><i class="fa fa-home"></i><span>Account</span></a>
+                </div>
+                <div class="sidebar__link active_menu_link">
+                    <a href="#"><i class="fa fa-user-o"></i><span>Profile</span></a>
+                </div>
+                <div class="sidebar__link">
+                    <a href="#"><i class="fa fa-trophy"></i><span>Your Points</span></a>
+                </div>
+                <div class="sidebar__link">
+                    <a href="#"><i class="fa fa-building-o"></i><span>Stays</span></a>
+                </div>
+                <div class="sidebar__link">
+                    <a href="#"><i class="fa fa-file-text-o"></i><span>Invoices</span></a>
+                </div>
+                <div class="sidebar__link">
+                    <a href="#"><i class="fa fa-inbox"></i><span>Inbox</span></a>
+                </div>
+                <div class="logout">
+                    <a href="#"><i class="fa fa-power-off"></i><span>Sign Out</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Will use Apex Charts cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

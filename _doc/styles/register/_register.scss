@@ -1,0 +1,134 @@
+@import './responsive';
+
+.container {
+    margin: 5rem  0;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 40vw;
+    max-width: 100%;
+}
+
+.header {
+    // border-bottom: 1px solid #f0f0f0;
+    // background-color: #f7f7f7;
+    background-color: #fff;
+    padding: 20px 40px;
+    display: block;
+    align-items: center;
+    text-align: center;
+
+    img {
+        width: 40%;
+        margin: 5px;
+    }
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+}
+
+.form {
+    padding: 10px 40px;
+    
+    
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    
+    label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+
+        &::placeholder{
+            color:black;
+            opacity: 0.4;
+        }
+    }
+    i {
+        visibility: hidden;
+        position: absolute;
+        top: 45px;
+        right: 10px;
+    }
+    small {
+        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &.success {
+        input {
+            border-color: #2ecc71;
+        }
+        i.fa-check-circle {
+            color: #2ecc71;
+            visibility: visible;
+        }
+    } 
+    &.error {
+        input {
+            border-color: #e74c3c;
+        }
+        i.fa-exclamation-circle {
+            color: #e74c3c;
+            visibility: visible;
+        }
+        small {
+            color: #e74c3c;
+            visibility: visible;
+        }
+    }
+}
+
+.btnHolder {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    button {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, #9921e8, #5f72be 50%, #9921e8);
+        cursor: pointer;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: inherit;
+        background-size: 200%;
+        transition: .5s;
+       
+        &:hover {
+            background-position: right;
+        }
+    }
+    a { 
+        display: inline;
+        text-decoration: none;
+        color:  #595d75;
+
+        &:hover {
+            color:  #6a7199;
+        }
+    }
+}
