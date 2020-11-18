@@ -86,7 +86,9 @@ Alamat url untuk website: https://member.picassorewards.com, system ini sedang d
 
 ## Jawaban Anda
 
-1a.)    a. Login
+1a.)    
+
+        a. Login
            Menurut saya tampilan halaman login terlalu lebar, logonya terlalu besar, gambar backgroundnya terlalu ramai.
 
         b. register
@@ -106,7 +108,9 @@ Alamat url untuk website: https://member.picassorewards.com, system ini sedang d
            Secara tampilan sudah bagus, informasi yang dibutuhkan pengguna sudah cukup menjelaskan.
 
 
-1b.)    a. Login
+1b.)    
+        
+        a. Login
            Tampilan halaman sebaiknya diperkecil dan diletakkan di tengah, logo ditempatkan di atas form, background diubah menjadi warna netral atau sewarna.
            
         b. register
